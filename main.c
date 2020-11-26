@@ -233,7 +233,7 @@ int main(void)
                             col1Count++;
                             board[0][5 - col1Count] = 1;
                     }
-                    if((~P5IN & 0x02) && (x >= width / 7 && x <= 2 * width / 7))
+                    if((~P5IN & 0x02) && (x > width / 7 && x <= 2 * width / 7))
                     {
                             Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
                             Graphics_drawCircle(&g_sContext, slot2 - 9, slot2count, 6);
@@ -244,7 +244,7 @@ int main(void)
                             col2Count++;
                             board[1][5 - col2Count] = 1;
                     }
-                    if((~P5IN & 0x02) && (x >= 2 * width / 7 && x <= 3 * width / 7))
+                    if((~P5IN & 0x02) && (x > 2 * width / 7 && x <= 3 * width / 7))
                     {
                             Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
                             Graphics_drawCircle(&g_sContext, slot3 - 9, slot3count, 6);
@@ -255,7 +255,7 @@ int main(void)
                             col3Count++;
                             board[2][5 - col3Count] = 1;
                     }
-                    if((~P5IN & 0x02) && (x >= 3 * width / 7 && x <= 4 * width / 7))
+                    if((~P5IN & 0x02) && (x > 3 * width / 7 && x <= 4 * width / 7))
                     {
                             Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
                             Graphics_drawCircle(&g_sContext, slot4 - 9, slot4count, 6);
@@ -266,7 +266,7 @@ int main(void)
                             col4Count++;
                             board[3][5 - col4Count] = 1;
                     }
-                    if((~P5IN & 0x02) && (x >= 4 * width / 7 && x <= 5 * width / 7))
+                    if((~P5IN & 0x02) && (x > 4 * width / 7 && x <= 5 * width / 7))
                     {
                             Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
                             Graphics_drawCircle(&g_sContext, slot5 - 9, slot5count, 6);
@@ -277,7 +277,7 @@ int main(void)
                             col5Count++;
                             board[4][5 - col5Count] = 1;
                     }
-                    if((~P5IN & 0x02) && (x >= 5 * width / 7 && x <= 6 * width / 7))
+                    if((~P5IN & 0x02) && (x > 5 * width / 7 && x <= 6 * width / 7))
                     {
                             Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
                             Graphics_drawCircle(&g_sContext, slot6 - 9, slot6count, 6);
@@ -288,7 +288,7 @@ int main(void)
                             col6Count++;
                             board[5][5 - col6Count] = 1;
                     }
-                    if((~P5IN & 0x02) && (x >= 6 * width / 7 && x <= width))
+                    if((~P5IN & 0x02) && (x > 6 * width / 7 && x <= width))
                     {
                             Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
                             Graphics_drawCircle(&g_sContext, slot7 - 9, slot7count, 6);
@@ -315,7 +315,7 @@ int main(void)
                         board[0][5 - col1Count] = 1;
 
                 }
-                if((~P3IN & 0x20) && (x >= width / 7 && x <= 2 * width / 7))
+                if((~P3IN & 0x20) && (x > width / 7 && x <= 2 * width / 7))
                 {
                         Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
                         Graphics_drawCircle(&g_sContext, slot2 - 9, slot2count, 6);
@@ -326,7 +326,7 @@ int main(void)
                         col2Count++;
                         board[1][5 - col2Count] = 1;
                 }
-                if((~P3IN & 0x20) && (x >= 2 * width / 7 && x <= 3 * width / 7))
+                if((~P3IN & 0x20) && (x > 2 * width / 7 && x <= 3 * width / 7))
                 {
                         Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
                         Graphics_drawCircle(&g_sContext, slot3 - 9, slot3count, 6);
@@ -337,7 +337,7 @@ int main(void)
                         col3Count++;
                         board[2][5 - col3Count] = 1;
                 }
-                if((~P3IN & 0x20) && (x >= 3 * width / 7 && x <= 4 * width / 7))
+                if((~P3IN & 0x20) && (x > 3 * width / 7 && x <= 4 * width / 7))
                 {
                         Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
                         Graphics_drawCircle(&g_sContext, slot4 - 9, slot4count, 6);
@@ -348,7 +348,7 @@ int main(void)
                         col4Count++;
                         board[3][5 - col4Count] = 1;
                 }
-                if((~P3IN & 0x20) && (x >= 4 * width / 7 && x <= 5 * width / 7))
+                if((~P3IN & 0x20) && (x > 4 * width / 7 && x <= 5 * width / 7))
                 {
                         Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
                         Graphics_drawCircle(&g_sContext, slot5 - 9, slot5count, 6);
@@ -359,7 +359,7 @@ int main(void)
                         col5Count++;
                         board[4][5 - col5Count] = 1;
                 }
-                if((~P3IN & 0x20) && (x >= 5 * width / 7 && x <= 6 * width / 7))
+                if((~P3IN & 0x20) && (x > 5 * width / 7 && x <= 6 * width / 7))
                 {
                         Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
                         Graphics_drawCircle(&g_sContext, slot6 - 9, slot6count, 6);
@@ -370,7 +370,7 @@ int main(void)
                         col6Count++;
                         board[5][5 - col6Count] = 1;
                 }
-                if((~P3IN & 0x20) && (x >= 6 * width / 7 && x <= width))
+                if((~P3IN & 0x20) && (x > 6 * width / 7 && x <= width))
                 {
                         Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
                         Graphics_drawCircle(&g_sContext, slot7 - 9, slot7count, 6);
